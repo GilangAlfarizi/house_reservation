@@ -10,7 +10,7 @@
             <div class="flex justify-center gap-x-8">
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img class="rounded-t-lg" src="/image/BROSUR bogas 5 II.jpg" alt="" />
+                        <img class="rounded-t-lg" src="/images/BROSUR bogas 5 II.jpg" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="#">
@@ -27,7 +27,7 @@
                 </div>
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img class="rounded-t-lg" src="/image/BROSUR DEPAN BOGAS CLUSTER 6 copy F.jpg" alt="" />
+                        <img class="rounded-t-lg" src="/images/BROSUR DEPAN BOGAS CLUSTER 6 copy F.jpg" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="#">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img class="rounded-t-lg" src="/image/BROSUR DEPAN BOGAS VALLEY copy 2.jpg" alt="" />
+                        <img class="rounded-t-lg" src="/images/BROSUR DEPAN BOGAS VALLEY copy 2.jpg" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="#">
