@@ -19,6 +19,6 @@
     },
     "dependencies": {
         "flowbite": "^2.5.2",
-        "plugin": "^0.3.3"
+        "plugin": "^0.0.15"
     }
 }
