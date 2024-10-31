@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    @vite(['resources/css/app.css', 'resources/sass/app.scss', 'resources/js/app.js'])
     
 </head>
 <body>
@@ -42,7 +43,7 @@
         @yield('content')
     </div>
     <footer class="mt-10 bg-gray-800 text-white py-4">
-        <img src="{{URL::asset('/images/IMG-20240508-WA0064.jpg')}}" alt="logo" class="w-40 h-30">
+        <img src="{{ asset('images/IMG-20240508-WA0064.jpg') }}" alt="logo" class="w-40 h-30">
         <div class="container mx-auto text-center">
           <p>&copy; 2024 Reservasi Rumah. All Rights Reserved.</p>
         </div>
