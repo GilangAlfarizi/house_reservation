@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    @vite('resources/css/app.css')
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
     <header class="flex justify-center fixed top-0 left-0 right-0 z-10">
