@@ -12,16 +12,9 @@
 </head>
 <body>
     <header class="flex justify-center fixed top-0 left-0 right-0 z-10">
+  
         <div class="bg-[#8F8B55] text-white my-10 flex justify-start font-lora w-fit rounded-3xl px-8">
-        
-        <a href="{{route('register')}}">
-            <p class="my-2 py-2 px-6 mx-2">Register</p>
-        </a>
-
-        <a href="{{route('login')}}">
-            <p class="my-2 py-2 px-6 mx-2">Login</p>
-        </a>
-
+    
             <p class="my-2 py-2 px-6 mx-2 bg-gray-400/60 rounded-3xl">Home</p>
 
         <a href="{{route('reservation.index')}}">
