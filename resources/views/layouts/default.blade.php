@@ -23,8 +23,9 @@
         </a>
 
             <p class="my-2 py-2 px-6 mx-2">About</p>
+            
         </div>
-
+        
         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{ route('logout') }}"
                onclick="event.preventDefault();
@@ -36,10 +37,10 @@
                 @csrf
             </form>
         </div>
-
     </header>
     <div class="flex-grow">
         @yield('content')
+    
     </div>
     <footer class="mt-10 bg-gray-800 text-white py-4">
         <img src="{{URL::asset('/images/IMG-20240508-WA0064.jpg')}}" alt="logo" class="w-40 h-30">

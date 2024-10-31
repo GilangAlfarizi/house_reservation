@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="relative w-full h-screen">
-    <img src="../images/type45(2).jpg" alt="Home Background" class="blur-sm hover:blur-none w-full h-full object-cover">
+    <img src="/images/type45(2).jpg" alt="Home Background" class="blur-sm hover:blur-none w-full h-full object-cover">
         <div class="absolute inset-0 flex flex-col items-center justify-center">
             <a class="flex items-center justify-center py-10">
                 <h5 class="text-white text-4xl font-lora bg-[#8F8B55] bg-opacity-50 px-6 py-3 rounded-lg">
@@ -24,11 +24,11 @@
                 <div class="flex justify-center gap-x-8">
                     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg" src="../images/BROSUR bogas 5 II.jpg" alt="" />
+                            <img class="rounded-t-lg" src="/images/BROSUR bogas 5 II.jpg" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">BOGAS 5</h5>
                             </a>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
                             <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
