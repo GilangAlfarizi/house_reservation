@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="relative w-full h-screen">
-    <img src="/images/type45(2).jpg" alt="Home Background" class="blur-sm hover:blur-none w-full h-full object-cover">
+    <img src="../images/type45(2).jpg" alt="Home Background" class="blur-sm hover:blur-none w-full h-full object-cover">
         <div class="absolute inset-0 flex flex-col items-center justify-center">
             <a class="flex items-center justify-center py-10">
                 <h5 class="text-white text-4xl font-lora bg-[#8F8B55] bg-opacity-50 px-6 py-3 rounded-lg">
@@ -24,7 +24,7 @@
                 <div class="flex justify-center gap-x-8">
                     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
-                            <img class="rounded-t-lg" src="/images/BROSUR bogas 5 II.jpg" alt="" />
+                            <img class="rounded-t-lg" src="../images/BROSUR bogas 5 II.jpg" alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
