@@ -8,8 +8,13 @@
 
     <div class="max-w-7xl mx-auto py-20 px-4">
         <h1 class="text-3xl font-bold mb-6">Bogas Cluster</h1>
-        <p class="text-gray-600 mb-8">Pilihan rumah di lokasi strategis dan desain modern yang sesuai dengan kebutuhanmu.</p>
-        <a href="/houses/create" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-0 px-1 rounded">Create</a>
+        <p class="text-center text-gray-600 mb-8">Pilihan rumah di lokasi strategis dan desain modern yang sesuai dengan kebutuhanmu.</p>
+
+        @auth
+        <div class="py-2">
+        <a href="/houses/create" class="py-2 px-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-0 px-1 rounded">Create</a>
+        </div>
+        @endauth
 
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -41,6 +46,8 @@
                         <a href="{{ route('houses.show', $item->id) }}" class="inline-block mt-4 text-blue-500 hover:underline">
                             Lihat detail &rarr;
                         </a>
+
+                        @auth
                         <a href="/houses/{{$item->id}}/edit" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">Edit</a>
 
                         <form action="/houses/{{$item->id}}" method="POST">
@@ -48,7 +55,7 @@
                             @method('DELETE')
                             <input type="submit" value="Delete" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
                         </form>
-
+                        @endauth
                     </div>
                 </div>
             @endforeach

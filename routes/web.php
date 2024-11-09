@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AdminProjectController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\HousesController;
-
+use App\Http\Controllers\ContactController;
 
 Route::get('/', [DashboardController::class, 'index']);
 Route::get('/reservation', [ReservationController::class, 'index'])->name('reservation.index');
@@ -26,6 +26,13 @@ Route::get('/category/{id}/edit', [CategoriesController::class, 'edit']);
 Route::put('/category/{id}', [CategoriesController::class, 'update']);
 Route::delete('/category/{id}', [CategoriesController::class, 'destroy']);
 
+Route::middleware(['auth'])->group(function () {
+    
+});
 
 //CRUD House
 Route::resource('houses', HousesController::class);
+
+//CRUD Contact
+Route::get('/contact', [ContactController::class, 'index']);
+Route::post('/contact/submit', [ContactController::class, 'submit'])->name('contact.submit');

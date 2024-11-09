@@ -13,7 +13,7 @@
     
 </head>
 <body>
-    <header class="flex justify-center fixed top-0 left-0 right-0 z-10">
+    <header class="flex justify-center fixed top-0 left-0 right-0 z-0">
   
         <div class="bg-[#8F8B55] text-white my-10 flex justify-start font-lora w-fit rounded-3xl px-8">
             
@@ -25,12 +25,14 @@
             <p class="my-2 py-2 px-6 mx-2">Projects</p>
         </a>
 
+        <a href="/contact">
             <p class="my-2 py-2 px-6 mx-2">Contact</p>
-            
+        </a>
         </div>
         
-        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="{{ route('logout') }}"
+        @auth
+        <div class="py-12 px-4 fixed top-0 right-0 z-10" >
+            <a class="  bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" href="{{ route('logout') }}"
                onclick="event.preventDefault();
                              document.getElementById('logout-form').submit();">
                 {{ __('Logout') }}
@@ -40,12 +42,14 @@
                 @csrf
             </form>
         </div>
+        @endauth
+        
     </header>
     <main class="flex-grow">
         @yield('content')
     
     </main>
-    <footer class="mt-10 bg-gray-800 text-white py-4">
+    <footer class="mt-10 bg-gray-800 text-white py-4 fixed bottom-0 left-0 w-full">
         <img src="{{ asset('image/logo.png') }}" alt="logo" class="w-40 h-30">
         <div class="container mx-auto text-center">
           <p>&copy; 2024 Reservasi Rumah. All Rights Reserved.</p>
