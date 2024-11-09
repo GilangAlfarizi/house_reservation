@@ -59,9 +59,9 @@ class HousesController extends Controller
      */
     public function show($id)
     {
-        $house = DB::table('houses')->find($id);
+        $house = House::find($id);
 
-        return view('houses.show',['house'=> $house]);
+        return view('houses.show',["house"=> $house]);
     }
 
     /**
@@ -69,64 +69,44 @@ class HousesController extends Controller
      */
     public function edit($id)
     {
-        $house = DB::table('houses')->find($id);
+        $house = House::find($id);
 
-        return view('houses.edit',['house'=> $house]);
+        return view('houses.edit',["house"=> $house]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, string $id)
     {
         $house= House::find($id);
 
         if($request->has('image')){
-            File::delete('image/'.$house->image);
-
+            File::delete('image/' . $house->image);
+            
             $imageName = time().'.'. $request->image->extension();
 
             $request->image->move(public_path('image'), $imageName);
 
-            $house->image= $imageName;
+            $house ->image= $imageName;
+
         }
 
-        DB::table('houses')
-        ->where('id', $id)
-        ->update(
-            ['name' =>$request->input('name'),
-            'description' =>$request->input('description'),
-            'location' =>$request->input('location'),
-            'land_area' =>$request->input('land_area'),
-            'building_area' =>$request->input('building_area'),
-            'floor_count' =>$request->input('floor_count'),
-            'bedroom_count' =>$request->input('bedroom_count'),
-            'bathroom_count' =>$request->input('bathroom_count'),
-            'price' =>$request->input('price'),
-            'unit_count' =>$request->input('unit_count'),
-            'status' =>$request->input('status'),
-            'image' =>$imageName
-            ]
-            );
-            return redirect('/houses');
-        
+            $house->name = $request->input('name');
+            $house->description = $request->input('description');
+            $house->location = $request->input('location');
+            $house->land_area = $request->input('land_area');
+            $house->building_area = $request->input('building_area');
+            $house->floor_count = $request->input('floor_count');
+            $house->bedroom_count = $request->input('bedroom_count');
+            $house->bathroom_count = $request->input('bathroom_count');
+            $house->price = $request->input('price');
+            $house->unit_count = $request->input('unit_count');
+            $house->status = $request->input('status');
 
+            $house->save();
 
-        //     $house->name =$request->input('name');
-        //     $house->description =$request->input('description');
-        //     $house->location =$request->input('location');
-        //     $house->land_area =$request->input('land_area');
-        //     $house->building_area =$request->input('building_area');
-        //     $house->floor_count =$request->input('floor_count');
-        //     $house->bedroom_count =$request->input('bedroom_count');
-        //     $house->bathroom_count =$request->input('bathroom_count');
-        //     $house->price =$request->input('price');
-        //     $house->unit_count =$request->input('unit_count');
-        //     $house->status =$request->input('status');
-
-        //     $house->save();
-
-        // return redirect('/houses');
+        return redirect('/houses');
     }
 
     /**
@@ -134,6 +114,12 @@ class HousesController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $house= House::find($id);
+
+        File::delete('image/' . $house->image);
+
+        $house-> delete();
+
+        return redirect('houses');
     }
 }

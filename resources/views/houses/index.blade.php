@@ -41,7 +41,14 @@
                         <a href="{{ route('houses.show', $item->id) }}" class="inline-block mt-4 text-blue-500 hover:underline">
                             Lihat detail &rarr;
                         </a>
-                        <a href="{{route('houses.edit', $item->id)}}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">Edit</a>
+                        <a href="/houses/{{$item->id}}/edit" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">Edit</a>
+
+                        <form action="/houses/{{$item->id}}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <input type="submit" value="Delete" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                        </form>
+
                     </div>
                 </div>
             @endforeach

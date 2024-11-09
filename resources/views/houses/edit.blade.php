@@ -4,8 +4,7 @@
 <div class="max-w-7xl mx-auto py-20 px-4">
     <h1 class="text-2xl font-bold mb-6">Edit Rumah</h1>
 
-    <form action="/houses/{{$house->id}}" method="POST" class="space-y-4">
-        @method('put')
+    <form action="/houses/{{$house->id}}" method="POST" enctype="multipart/form-data" class="space-y-4">
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -15,7 +14,7 @@
                 </ul>
             </div>
         @endif
-        
+        @method('PUT')
         @csrf
         <div>
             <label for="name" class="block text-sm font-medium text-gray-700">Nama Rumah</label>
