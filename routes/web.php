@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AdminProjectController;
 use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\HousesController;
 
 
 Route::get('/', [DashboardController::class, 'index']);
@@ -24,3 +25,7 @@ Route::get('/category/{id}', [CategoriesController::class, 'show']);
 Route::get('/category/{id}/edit', [CategoriesController::class, 'edit']);
 Route::put('/category/{id}', [CategoriesController::class, 'update']);
 Route::delete('/category/{id}', [CategoriesController::class, 'destroy']);
+
+
+//CRUD House
+Route::resource('houses', HousesController::class);
