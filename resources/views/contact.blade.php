@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-<body class="bg-white flex justify-end items-center min-h-screen">
+<div class="bg-white flex justify-center items-center min-h-screen m-0">
     <div class="w-full max-w-md p-6 space-y-6 bg-white shadow-md rounded-md">
         <h1 class="text-3xl font-bold text-center">Contact us</h1>
 
@@ -42,5 +42,5 @@
             <button type="submit" class="w-full py-2 bg-black text-white rounded-md">Send message</button>
         </form>
     </div>
-</body>
+</div>
 @endsection

@@ -17,12 +17,12 @@
   
         <div class="bg-[#8F8B55] text-white my-10 flex justify-start font-lora w-fit rounded-3xl px-8">
             
-        <a href="/">
-            <p class="my-2 py-2 px-6 mx-2 bg-gray-400/60 rounded-3xl">Home</p>
+        <a href="/" class="home-link">
+            <p class="my-2 py-2 px-6 mx-2  bg-gray-400/60 rounded-3xl" id="home-text">Home</p>
         </a>
 
-        <a href="/houses">
-            <p class="my-2 py-2 px-6 mx-2">Projects</p>
+        <a href="/houses" class="projects-link">
+            <p class="my-2 py-2 px-6 mx-2" id="projects-text">Projects</p>
         </a>
 
         <a href="/contact">
@@ -47,14 +47,14 @@
     </header>
     <main class="flex-grow">
         @yield('content')
-    
+        <footer class="mt-10 bg-gray-800 text-white py-4 fixed bottom-0 left-0 w-full">
+            <img src="{{ asset('image/logo.png') }}" alt="logo" class="w-40 h-30">
+            <div class="container mx-auto text-center">
+            <p>&copy; 2024 Reservasi Rumah. All Rights Reserved.</p>
+            </div>
+        </footer>
     </main>
-    <footer class="mt-10 bg-gray-800 text-white py-4 fixed bottom-0 left-0 w-full">
-        <img src="{{ asset('image/logo.png') }}" alt="logo" class="w-40 h-30">
-        <div class="container mx-auto text-center">
-          <p>&copy; 2024 Reservasi Rumah. All Rights Reserved.</p>
-        </div>
-      </footer>
+    
 </body>
-
+    
 </html>
