@@ -35,4 +35,4 @@ Route::resource('houses', HousesController::class);
 
 //CRUD Contact
 Route::get('/contact', [ContactController::class, 'index']);
-Route::post('/contact/submit', [ContactController::class, 'submit'])->name('contact.submit');
+Route::post('/contact/submit', [ContactController::class, 'submit'])->name('contact.submit'); 
