@@ -1,8 +1,6 @@
 @extends('layouts.default')
 
-@section('judul')
 
-@endsection
 
 @section('content')
 
