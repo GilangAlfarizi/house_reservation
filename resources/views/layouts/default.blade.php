@@ -31,13 +31,13 @@
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
             <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
                 <li>
-                <a href="/" class="block py-2 px-3 text-white  rounded md:bg-transparent ">Home</a>
+                <a href="/" class="{{ Request::is('/') ? 'text-black ' : 'text-white' }} hover:text-gray-400 block py-2 px-3">Home</a>
                 </li>
                 <li>
-                <a href="/houses" class="block py-2 px-3 text-white">Projects</a>
+                <a href="/houses" class="{{ Request::is('houses') ? 'text-black ' : 'text-white' }} hover:text-gray-400 block py-2 px-3">Projects</a>
                 </li>
                 <li>
-                <a href="/contact" class="block py-2 px-3 text-white">Contact</a>
+                <a href="/contact" class="{{ Request::is('contact') ? 'text-black ' : 'text-white' }} hover:text-gray-400 block py-2 px-3">Contact</a>
                 </li>
             </ul>
             </div>

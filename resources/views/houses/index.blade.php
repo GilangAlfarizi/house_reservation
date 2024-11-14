@@ -5,7 +5,7 @@
 @section('content')
 
     <div class="max-w-7xl mx-auto py-20 px-4">
-        <h1 class="text-3xl font-bold mb-6">Bogas Cluster</h1>
+        <h1 class="text-3xl text-center font-bold mb-6">Bogas Cluster</h1>
         <p class="text-center text-gray-600 mb-8">Pilihan rumah di lokasi strategis dan desain modern yang sesuai dengan kebutuhanmu.</p>
 
         @auth
