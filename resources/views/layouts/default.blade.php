@@ -62,7 +62,7 @@
         <footer class="mt-10 bg-gray-800 text-white py-4 flex bottom-0 left-0 w-full">
             <img src="{{ asset('image/logo.png') }}" alt="logo" class="w-40 h-30">
             <div class="container mx-auto text-center">
-            <p>&copy; 2024 Reservasi Rumah. All Rights Reserved.</p>
+            <p>&copy; 2024 Reka Kreasi Bumi. All Rights Reserved.</p>
             </div>
         </footer>
     </main>

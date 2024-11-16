@@ -19,21 +19,29 @@
 </div>
     
 <div class="mt-20">
-    <a href="" class="flex items-center justify-center">
+    <a class="flex items-center justify-center">
         <h1 class="text-6xl font-bold">Silahkan Pilih Rumah Impian Kalian!</h1>
     </a>
 </div>
-<div class="grid grid-cols-4 gap-2">
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src="{{ asset('image/Bogas5.jpg') }}" alt="">
+<div class="mt-20 items-end grid grid-cols-4 px-96">
+    <div class="flex justify-center">
+        <img class="h-96 max-w-full" src="{{ asset('image/Bogas5.jpg') }}" alt="">
     </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src="{{ asset('image/Bogas6.jpg') }}" alt="">
+    <div class="flex justify-center">
+        <img class="h-80 max-w-full" src="{{ asset('image/Bogas6.jpg') }}" alt="">
     </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src="{{ asset('image/BogasHill.jpg') }}" alt="">
+    <div class="flex justify-center">
+        <img class="h-80 max-w-full" src="{{ asset('image/BogasHill.jpg') }}" alt="">
     </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src="{{ asset('image/BogasValley.jpg') }}" alt="">
+    <div class="flex justify-center">
+        <img class="h-96 max-w-full" src="{{ asset('image/BogasValley.jpg') }}" alt="">
     </div>
 </div>
+
+<div class="mt-20">
+    <a class="flex items-center justify-center">
+        <h1 class="text-6xl font-bold">Proyek Hunian Bogas Cluster</h1>
+    </a>
+    <p class="mx-auto mt-3 max-w-screen-md text-center text-base tracking-tight">Pilihan rumah di lokasi strategis dan desain modern yang sesuai dengan kebutuhanmu.</p>
+</div>
+
