@@ -44,4 +44,4 @@
     </a>
     <p class="mx-auto mt-3 max-w-screen-md text-center text-base tracking-tight">Pilihan rumah di lokasi strategis dan desain modern yang sesuai dengan kebutuhanmu.</p>
 </div>
-
+@endsection
