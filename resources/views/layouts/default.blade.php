@@ -14,7 +14,7 @@
     
 </head>
 <body>
-    <header class="flex justify-center item-center fixed top-0 left-0 right-0 z-0">
+    <header class="flex justify-center item-center fixed top-0 left-0 right-0 z-20">
         <nav class="bg-[#8F8B55] fixed w-full z-20 top-0 start-0">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
