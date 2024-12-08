@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="relative w-full h-screen">
-    <img src="{{asset('image/type45(2).jpg')}}" alt="Home Background" class="blur-sm hover:blur-none w-full h-full object-cover">
+    <img src="{{asset('/image/type45(2).jpg')}}" alt="Home Background" class="blur-sm hover:blur-none w-full h-full object-cover">
         <div class="absolute inset-0 flex flex-col items-center justify-center">
             <a class="flex items-center justify-center py-10">
                 <h5 class="text-white text-4xl font-lora bg-[#8F8B55] bg-opacity-50 px-6 py-3 rounded-lg">
