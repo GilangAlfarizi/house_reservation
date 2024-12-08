@@ -7,7 +7,7 @@
         <div class="absolute inset-0 flex flex-col items-center justify-center">
             <a class="flex items-center justify-center py-10">
                 <h5 class="text-white text-4xl font-lora bg-[#8F8B55] bg-opacity-50 px-6 py-3 rounded-lg">
-                    BOGAS CLUSTERRR
+                    BOGAS CLUSTER
                 </h5>
             </a>
             <a class="flex items-center justify-center">
