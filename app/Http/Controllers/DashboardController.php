@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\House;
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        $houses=House::where('status', 'Available')->get();
+        return view('welcome', ['houses' => $houses]);
     }
     
 }

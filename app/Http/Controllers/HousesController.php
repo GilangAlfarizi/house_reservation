@@ -41,6 +41,8 @@ class HousesController extends Controller
 
         $request->image->move(public_path('image'), $imageName);
 
+        $status = $request->input('unit_count') == 0 ? 'Sold Out' : $request->input('status');
+
         House::create([
             'name' =>$request->input('name'),
             'description' =>$request->input('description'),
@@ -52,7 +54,7 @@ class HousesController extends Controller
             'bathroom_count' =>$request->input('bathroom_count'),
             'price' =>$request->input('price'),
             'unit_count' =>$request->input('unit_count'),
-            'status' =>$request->input('status'),
+            'status' =>$status,
             'image' =>$imageName
         ]);
 
@@ -94,8 +96,10 @@ class HousesController extends Controller
             $request->image->move(public_path('image'), $imageName);
 
             $house ->image= $imageName;
-
+            
         }
+
+            $status = $request->input('unit_count') == 0 ? 'Sold Out' : $request->input('status');
 
             $house->name = $request->input('name');
             $house->description = $request->input('description');
@@ -107,7 +111,7 @@ class HousesController extends Controller
             $house->bathroom_count = $request->input('bathroom_count');
             $house->price = $request->input('price');
             $house->unit_count = $request->input('unit_count');
-            $house->status = $request->input('status');
+            $house->status = $status;
 
             $house->save();
 
