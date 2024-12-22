@@ -14,9 +14,12 @@
         <div class="">
 
             {{-- Image Gallery --}}
-            <div class="w-full lg:w-2/3">
-                <div class="grid grid-cols-2 gap-2">
+            <div class="w-full ">
+                <div class="grid grid-cols-2 gap-2 place-items-center">
                     <img src="{{ asset('image/' . $house->image) }}" alt="Property Image 1" class="rounded-lg">
+                    <div class="flex justify-center">
+                        {!! $house->map !!}
+                    </div>
                 </div>
             </div>
 
@@ -24,7 +27,7 @@
             <div class="w-full lg:w-1/3 flex flex-col gap-4">
                 {{-- Property Title and Address --}}
                 <div>
-                    <h1 class="text-3xl font-bold">{{ $house->name }}</h1>
+                    <h1 class="text-3xl font-bold mt-4">{{ $house->name }}</h1>
                     <p class="text-gray-500 mt-1">{{ $house->location }}</p>
                 </div>
 

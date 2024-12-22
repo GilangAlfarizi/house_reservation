@@ -24,5 +24,6 @@ class House extends Model
         'unit_count',
         'status',
         'image',
+        'map',
     ];
 }

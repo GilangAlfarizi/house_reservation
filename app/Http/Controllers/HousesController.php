@@ -55,7 +55,8 @@ class HousesController extends Controller
             'price' =>$request->input('price'),
             'unit_count' =>$request->input('unit_count'),
             'status' =>$status,
-            'image' =>$imageName
+            'image' =>$imageName,
+            'map' =>$request->input('map')
         ]);
 
         return redirect('/houses');
@@ -112,6 +113,7 @@ class HousesController extends Controller
             $house->price = $request->input('price');
             $house->unit_count = $request->input('unit_count');
             $house->status = $status;
+            $house->map = $request->input('map');
 
             $house->save();
 
