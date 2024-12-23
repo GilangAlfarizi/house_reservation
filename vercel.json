@@ -4,16 +4,9 @@
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.7.1" }
     },
-    "builds": [
-        {
-            "src": "api/*.php",
-            "use": "@vercel/php"
-        }
-    ],
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
-        { "src": "/(.*)", "dest": "/api/index.php" },
-        { "src": "/image/(.*)", "dest": "public/image/$1" }
+        { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,
     "buildCommand": "vite build",
@@ -21,7 +14,7 @@
     "env": {
         "APP_ENV": "local",
         "APP_DEBUG": "true",
-        "APP_URL": "https://house-reservation.vercel.app/",
+        "APP_URL": "https://house-reservation.vercel.app",
         "APP_KEY": "base64:8ds0MP3xi3vXWkX7VUZbPQvQgyvi/ebveLqBWU/ohZY=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
