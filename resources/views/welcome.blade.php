@@ -25,7 +25,7 @@
     </div>
     <div class="mt-20 items-end grid grid-cols-4 px-96">
         <div class="flex justify-center">
-            <img class="h-96 max-w-full" src="{{ asset('image/Bogas5.jpg') }}" alt="">
+            <img class="h-96 max-w-full" src="image/Bogas5.jpg') }}" alt="">
         </div>
         <div class="flex justify-center">
             <img class="h-80 max-w-full" src="{{ asset('image/Bogas6.jpg') }}" alt="">

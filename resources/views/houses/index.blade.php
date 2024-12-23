@@ -19,7 +19,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             @foreach ($houses as $item)
                 <div class="border rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-                    <img src="{{ asset('image/' . $item->image) }}" alt=""
+                    <img src="/image/{{ $item->image }}" alt="{{ $item->image }}"
                         class="w-full h-48 object-cover rounded-t-lg">
 
                     <div class="p-4">
